@@ -1,5 +1,6 @@
 \#*#
 *~
 ac-comphist.dat
-elpa/
+elpa/*
 projectile-bookmarks.eld
+auto-save-list/*
