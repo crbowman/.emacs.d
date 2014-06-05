@@ -8,12 +8,15 @@
 
 (package-initialize)
 
-(defvar my-packages
+(defvar my-packages)
+
+(setq my-packages
   '(auto-complete
     autopair
     color-theme 
     color-theme-solarized
     concurrent
+    clojure-mode
     ctable
     dash
     deferred
@@ -28,6 +31,7 @@
     highlight-current-line
     jedi
     magit 
+    paredit
     popup
     projectile
     python-environment 
