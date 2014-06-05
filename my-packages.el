@@ -13,6 +13,7 @@
 (setq my-packages
   '(auto-complete
     autopair
+    cider
     color-theme 
     color-theme-solarized
     concurrent
