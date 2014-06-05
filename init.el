@@ -7,12 +7,20 @@
 (require 'ui)
 (require 'my-term)
 (require 'my-python)
+(require 'my-lisp)
+(require 'my-clojure)
 (require 'utils)
 (require 'keybindings)
 
 (if (equal system-type 'darwin)
     (progn
       (require 'osx)))
+
+;; gc every 50MB of allocated data
+(setq gc-cons-threshold 50000000)
+
+;; warn when opening files bigger than 100MB
+(setq large-file-warning-threshold 100000000)
 
 
 ;; Projectile

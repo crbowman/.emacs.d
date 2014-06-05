@@ -4,10 +4,9 @@
 
 (add-hook 'python-mode-hook 
 	  '(subword-mode +1))
-
 ;; Flycheck
 (add-hook 'python-mode-hook 
-	  'flycheck-mode)
+	  '(flycheck-mode +1))
 
 ;; IPython
 (setq-default py-shell-name "ipython")

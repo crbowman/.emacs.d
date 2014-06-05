@@ -38,6 +38,7 @@
     python-environment 
     python-mode
     rainbow-mode
+    rainbow-delimiters 
     s
     smartparens
     volatile-highlights))
