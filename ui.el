@@ -28,6 +28,8 @@
 ;; y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(setq initial-scratch-message "")
+
 ;; Nice scrolling 
 (setq scroll-margin 0
       scroll-conservatively 100000
