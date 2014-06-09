@@ -8,6 +8,7 @@
 
 (setq ansi-color-for-comint-mode t)
 
+
 (if (equal system-type 'darwin)
     (progn 
       (setenv "LC_CTYPE" "UTF-8")))

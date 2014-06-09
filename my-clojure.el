@@ -9,7 +9,7 @@
        (paredit-mode +1)
        (run-hooks 'my-lisp-coding-hooks))
 
-     (setq my-clojure-mode-hook 'prelude-clojure-mode-defaults)
+     (setq my-clojure-mode-hook 'clojure-mode-defaults)
      
      (add-hook 'clojure-mode-hook (lambda ()
 				    (run-hooks 'my-clojure-mode-hook)))))

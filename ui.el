@@ -7,6 +7,8 @@
 
 (blink-cursor-mode 0)
 
+(setq ring-bell-function 'ignore)
+
 ;; Start in fullscreen
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
