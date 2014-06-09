@@ -22,6 +22,8 @@
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
 
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;; Projectile
 (projectile-global-mode)
