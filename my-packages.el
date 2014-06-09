@@ -29,7 +29,6 @@
     git-commit-mode
     git-rebase-mode
     helm
-    highlight-current-line
     jedi
     magit 
     paredit

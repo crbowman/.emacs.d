@@ -59,14 +59,10 @@
     (fringe-mode 4))
 
 ;; Highlight Current Line
-(require 'highlight-current-line)
 (global-hl-line-mode t)
-(setq highlight-current-line-globally t)
-(setq highlight-current-line-high-faces nil)
-(setq highlight-current-line-whole-line nil)
-(setq hl-line-face (quote highlight))
+;; (setq hl-line-face (quote highlight))
 
 ;; Color Theme
-(load-theme 'solarized-dark t)
+(load-theme 'molokai t)
 
 (provide 'ui)
