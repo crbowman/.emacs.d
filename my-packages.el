@@ -12,7 +12,6 @@
 
 (setq my-packages
   '(auto-complete
-    autopair
     cider
     color-theme 
     color-theme-solarized
@@ -37,9 +36,7 @@
     python-environment 
     python-mode
     rainbow-mode
-    rainbow-delimiters 
     s
-    smartparens
     volatile-highlights))
 
 (defun packages-installed-p ()

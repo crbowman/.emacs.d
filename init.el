@@ -28,16 +28,11 @@
 ;; Projectile
 (projectile-global-mode)
 
-(iswitchb-mode 1)
 (flyspell-mode 'on)
 
 ;; Ido mode
 (require 'ido)
 (ido-mode t)
-
-;; Autopair
-(require 'autopair)
-(autopair-global-mode)
 
 ;; Autocomplete
 (require 'auto-complete-config)
