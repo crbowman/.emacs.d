@@ -32,6 +32,8 @@
 
 (setq initial-scratch-message "")
 
+(setq nrepl-hide-special-buffers t)
+
 ;; Nice scrolling 
 (setq scroll-margin 0
       scroll-conservatively 100000

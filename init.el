@@ -7,8 +7,8 @@
 (require 'ui)
 (require 'my-term)
 (require 'my-python)
-(require 'my-lisp)
-(require 'my-clojure)
+(require 'my-emacs-lisp)
+(require 'my-clojure)			
 (require 'utils)
 (require 'keybindings)
 
