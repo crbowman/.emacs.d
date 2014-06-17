@@ -1,33 +1,16 @@
 
 (require-packages '(clojure-mode cider))
 
-(defvar electrify-return-match
-  "[\]}\)\"]" 
-  "If this regex matches the text after the coursor, do an electric return.")
-
-(defun elictify-return-if-match
-  "If the text after the cursor matches electrify-return-match, then open and 
-   indent an empty line between the cursor and the text. Move the cursor to 
-   the new line"
-  (interactive "P")
-  (let ((case-fold-search nil))
-    (if (looking-at electrify-return-match)
-	(save-excursion (newline-and-indent)))
-    (newline arg)
-    (indent-according-to-mode)))
-
 (eval-after-load 'clojure-mode
   '(progn
      (defun clojure-mode-defaults ()
        (subword-mode +1)
        (paredit-mode +1)
-       (show-paren-mode +1))
+       (show-paren-mode +1)
+       (electric-indent-mode +1))
 
      (setq my-clojure-mode-hook 'clojure-mode-defaults)
-     
-     (add-hook 'clojure-mode-hook (local-set-key 
-				   (kdb "RET") 'electrify-return-if-match))
-     
+  
      (add-hook 'clojure-mode-hook (lambda ()
 				    (run-hooks 'my-clojure-mode-hook)))))
 
@@ -39,7 +22,10 @@
      
      (defun cider-repl-mode-defaults ()
        (subword-mode +1)
-       (paredit-mode +1)
+       (setq cider-show-error-buffer nil)
+       (setq cider-repl-print-length 100)
+       (setq cider-repl-use-clojure-font-lock t)
+       (setq cider-repl-use-pretty-printing t)
        (show-paren-mode +1))
 
      (setq my-cider-repl-mode-hook 'cider-repl-mode-defaults)

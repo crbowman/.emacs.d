@@ -9,6 +9,20 @@
 
 (setq ring-bell-function 'ignore)
 
+(define-globalized-minor-mode global-rainbow-mode rainbow-mode
+  (lambda () (rainbow-mode 1)))
+
+(require 'powerline)
+(powerline-center-theme)
+
+(when (require 'diminish nil 'noerror)
+  (eval-after-load "projectile"
+    '(diminish 'projectile-mode "proj"))
+  (eval-after-load "paredit"
+    '(diminish 'paredit-mode "paredit"))
+  (eval-after-load "auto-complete"
+    '(diminish 'auto-complete-mode nil)))
+
 ;; Start in fullscreen
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
@@ -62,9 +76,10 @@
 
 ;; Highlight Current Line
 (global-hl-line-mode t)
-;; (setq hl-line-face (quote highlight))
+
 
 ;; Color Theme
+(require 'molokai-theme)
 (load-theme 'molokai t)
 
 (provide 'ui)

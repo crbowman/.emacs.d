@@ -1,4 +1,4 @@
-
+(require 'diminish)
 
 (defun emacs-lisp-mode-defaults ()
   "Sensible defaults for `emacs-lisp-mode'."
@@ -7,10 +7,10 @@
   (show-paren-mode +1)
   (setq mode-name "EL"))
 
-(setq emacs-lisp-mode-hook 'emacs-lisp-mode-defaults)
+(setq my-emacs-lisp-mode-hook 'emacs-lisp-mode-defaults)
 
 (add-hook 'emacs-lisp-mode-hook (lambda ()
-                                  (run-hooks 'emacs-lisp-mode-hook)))
+                                  (run-hooks 'my-emacs-lisp-mode-hook)))
 
 (add-to-list 'auto-mode-alist '("Cask\\'" . emacs-lisp-mode))
 

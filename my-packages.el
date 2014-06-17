@@ -20,6 +20,7 @@
     ctable
     dash
     deferred
+    diminish
     epc
     epl 
     ess 
