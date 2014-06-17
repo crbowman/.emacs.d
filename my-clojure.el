@@ -16,9 +16,9 @@
 
 (eval-after-load 'cider
   '(progn 
-     (setq nrepl-log-messages t)
+    (setq nrepl-log-messages t)
      
-     (add-hook 'cider-mode-hook  'cider-turn-on-eldoc-mode)
+    (add-hook 'cider-mode-hook  'cider-turn-on-eldoc-mode)
      
      (defun cider-repl-mode-defaults ()
        (subword-mode +1)
@@ -26,11 +26,12 @@
        (setq cider-repl-print-length 100)
        (setq cider-repl-use-clojure-font-lock t)
        (setq cider-repl-use-pretty-printing t)
+       (font-lock-mode -1)
        (show-paren-mode +1))
-
+     
      (setq my-cider-repl-mode-hook 'cider-repl-mode-defaults)
      
      (add-hook 'cider-repl-mode-hook (lambda ()
-				       (run-hooks 'my-cider-repl-mode-hook)))))
+     				       (run-hooks 'my-cider-repl-mode-hook)))))
 
 (provide 'my-clojure)

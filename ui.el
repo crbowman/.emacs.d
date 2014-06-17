@@ -1,6 +1,6 @@
 ;; Remove GUI stuff 
 (setq inhibit-startup-message t)
-(global-font-lock-mode t)
+;; (global-font-lock-mode t)
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))   

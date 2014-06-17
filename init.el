@@ -6,11 +6,11 @@
   (normal-top-level-add-subdirs-to-load-path))
 
 (require 'my-packages)
+(require 'my-clojure)			
 (require 'ui)
 (require 'my-term)
 (require 'my-python)
 (require 'my-emacs-lisp)
-(require 'my-clojure)			
 (require 'utils)
 (require 'keybindings)
 
