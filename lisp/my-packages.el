@@ -33,6 +33,7 @@
     magit 
     paredit
     popup
+    powerline
     projectile
     python-environment 
     python-mode

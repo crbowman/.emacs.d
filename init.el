@@ -1,7 +1,7 @@
 (when (version< emacs-version "24.1")
   (error "Configuration requires at least GNU Emacs 24.1, youre running %s" emacs-version))
 
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (let ((default-directory "~/.emacs.d/themes/"))
   (normal-top-level-add-subdirs-to-load-path))
 
@@ -13,6 +13,7 @@
 (require 'my-emacs-lisp)
 (require 'utils)
 (require 'keybindings)
+
 
 (if (equal system-type 'darwin)
     (progn
@@ -41,6 +42,11 @@
 (ac-config-default)
 (setq ac-show-menu-immediately-on-auto-complete t)
 
+;; Tramp
+(add-to-list 'load-path "~/.emacs.d/elpa/tramp-2.2.11/lisp/")
+(add-to-list 'Info-default-directory-list "~/.emacs.d/elpa/tramp-2.2.11/info/")
+(setq tramp-default-mode "ssh")
+
 ;; don't use tabs
 (setq indent-tabs-mode nil)
 (custom-set-variables
@@ -58,3 +64,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+

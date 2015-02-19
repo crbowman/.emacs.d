@@ -82,4 +82,7 @@
 (require 'molokai-theme)
 (load-theme 'molokai t)
 
+(require 'edit-server)
+(edit-server-start)
+
 (provide 'ui)
