@@ -12,8 +12,8 @@
 (define-globalized-minor-mode global-rainbow-mode rainbow-mode
   (lambda () (rainbow-mode 1)))
 
-(require 'powerline)
-(powerline-center-theme)
+;; (require 'powerline)
+;; (powerline-center-theme)
 
 (when (require 'diminish nil 'noerror)
   (eval-after-load "projectile"

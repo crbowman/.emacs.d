@@ -23,8 +23,7 @@
 ;; Jedi
 (require 'jedi)
 (require 'my-jedi)
-(require 'cc-mode) ;; required for EIN  mode
-(require 'ein)
+
 
 (setq jedi:server-command 
      '("/Users/curtis/.emacs.d/elpa/jedi-20140321.1323/jediepcserver.py"))

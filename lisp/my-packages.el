@@ -21,6 +21,7 @@
     dash
     deferred
     diminish
+    edit-server
     epc
     epl 
     ess 
