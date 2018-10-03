@@ -27,8 +27,6 @@
     ess 
     f 
     flycheck
-    git-commit-mode
-    git-rebase-mode
     helm
     jedi
     magit 
@@ -143,7 +141,6 @@
  auto-install-alist)
 
 (provide 'my-packages)
-
 
 
 

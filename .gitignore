@@ -8,3 +8,5 @@ auto-save-list/*
 tramp
 eshell/
 ido.last
+.DS_Store
+.python-environments
